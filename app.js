@@ -156,7 +156,10 @@ document.write("<p>Variable names should not be JS keywords</p>")
 
 // Question no:1
 // Answer no:1
-
+var num1 = 3
+var num2 = 5
+var sum = num1 + num2;
+document.write("Sum of " + num1 + " and " + num2 + " is " + sum + "<br>")
 
 
 
@@ -164,8 +167,203 @@ document.write("<p>Variable names should not be JS keywords</p>")
 // Answer no:2
 
 
+// Subtraction
+var num3 = 10;
+var num4 = 5;
+var sub = num3 - num4;
+document.write("Subtraction of" + " " + num3 + " " + "and" + " " + num4 + " " + "is" + " " + sub + "<br>")
 
+// Multiplication
+var num3 = 10;
+var num4 = 5;
+var mul = num3 * num4;
+document.write("Multiplication of" + " " + num3 + " " + "and" + " " + num4 + " " + "is" + " " + mul + "<br>")
+
+// Division
+var num3 = 10;
+var num4 = 5;
+var divi = num3 / num4;
+document.write("Division of" + " " + num3 + " " + "and" + " " + num4 + " " + "is" + " " + divi + "<br>")
+
+// Modulus
+var num3 = 10;
+var num4 = 5;
+var mod = num3 % num4;
+document.write("Modulus of" + " " + num3 + " " + "and" + " " + num4 + " " + "is" + " " + mod + "<br>")
 
 // Question no:3
 // Answer no:3
+// a
+var num;
+// b
+document.write("Value after variable declaration is: " + num + "<br>");
+// c
+num = 5;
+// d
+document.write("Initial value: " + num + "<br>");
+// e
+num++;
+// f
+document.write("Value after increment is: " + num + "<br>");
+// g
+num = num + 7;
+// h
+document.write("Value after addition is: " + num + "<br>");
+// i
+num--;
+// j
+document.write("Value after decrement is: " + num + "<br>");
+// k
+let remainder = num % 3;
+// l
+document.write("The remainder is : " + remainder + "<br>");
+
+
+// Question no:4
+// Answer no:4
+var ticket = 600;
+var multi = 5;
+var resuit = ticket * multi;
+document.write("Total cost to buy" + " " + multi + " " + "tickets to a movie  is" + " " + resuit + + " " + "PKR" + "<br>");
+
+// Question no:5
+// Answer no:5
+var num = 4;
+
+document.write("<h2>Table of " + num + "</h2>");
+
+for (var i = 1; i <= 10; i++) {
+    document.write(num + "x" + i + "=" + (num * i) + "<br>")
+};
+
+// Question no:6
+// Answer no:6  
+var celsiusTemp = 25;
+
+var fahrenheit = (celsiusTemp * 9 / 5) + 32;
+document.write(celsiusTemp + "°C is " + fahrenheit + "°F<br>");
+
+var fahrenheitTemp = 70;
+
+var celsius = (fahrenheitTemp - 32) * 5 / 9;
+document.write(fahrenheitTemp + "°F is " + celsius + "°C");
+
+
+// Question no:7
+// Answer no:7
+var priceItem1 = 650;
+
+// b
+var priceItem2 = 100;
+
+// c
+var quantityItem1 = 3;
+
+// d
+var quantityItem2 = 7;
+
+// e
+var shippingCharges = 150;
+
+// Calculations
+var totalItem1 = priceItem1 * quantityItem1;
+var totalItem2 = priceItem2 * quantityItem2;
+var totalCost = totalItem1 + totalItem2 + shippingCharges;
+
+document.write("<h1>Shopping Cart</h1>");
+document.write("Price of item 1 is " + priceItem1 + "<br>");
+document.write("Quantity of item 1 is " + quantityItem1 + "<br>");
+document.write("Price of item 2 is " + priceItem2 + "<br>");
+document.write("Quantity of item 2 is " + quantityItem2 + "<br>");
+document.write("Shipping Charges " + shippingCharges + "<br><br>");
+document.write("Total cost of your order is " + totalCost);
+
+// Question no:8
+// Answer no:8
+
+var totalMarks = 980;
+var marksObtained = 804;
+
+var percentage = (marksObtained / totalMarks) * 100;
+
+document.write("<h1>Marks Sheet</h1>");
+document.write("Total Marks: " + totalMarks + "<br>");
+document.write("Marks Obtained: " + marksObtained + "<br>");
+document.write("Percentage: " + percentage.toFixed(2) + "%");
+
+// Question no:9
+// Answer no:9
+
+var totalPkr = (10 * 104.80) + (25 * 28);
+
+document.write("<h1>Currency in PKR</h1>");
+document.write("Total Currency in PKR: " + totalPkr);
+
+// Question no:10
+// Answer no:10
+
+var initialNum = 10;
+
+var result = ((initialNum + 5) * 10) / 2;
+
+// document.write("Result of single expression calculation: " + result);
+
+// Question no:11
+// Answer no:11
+
+var currentYear = 2026;
+
+var birthYear = 1998;
+var age1 = currentYear - birthYear;
+var age2 = age1 - 1;
+
+document.write("<h1>Age Calculator</h1>");
+document.write("Current Year: " + currentYear + "<br>");
+document.write("Birth Year: " + birthYear + "<br>");
+document.write("They are either " + age2 + " or " + age1 + " years old.");
+
+// Question no:12
+// Answer no:12
+
+var radius = 20;
+
+var pi = 3.142;
+
+var circumference = 2 * pi * radius;
+
+var area = pi * (radius * radius);
+
+document.write("<h1>The Geometrizer</h1>");
+document.write("Radius of a circle: " + radius + "<br>");
+document.write("The circumference is: " + circumference + "<br>");
+document.write("The area is: " + area);
+
+// Question no:13
+// Answer no:13
+
+var favoriteSnack = "chocolate chip cookies";
+
+// b
+var currentAge = 15;
+
+// c
+var maxAge = 65;
+
+// d
+var amountPerDay = 3;
+
+// e
+var yearsRemaining = maxAge - currentAge;
+var daysRemaining = yearsRemaining * 365; // or yearsRemaining * 365.25 for leap years
+var totalNeeded = daysRemaining * amountPerDay;
+
+document.write("<h1>The Lifetime Supply Calculator</h1>");
+document.write("Favorite Snack: " + favoriteSnack + "<br>");
+document.write("Current age: " + currentAge + "<br>");
+document.write("Estimated maximum age: " + maxAge + "<br>");
+document.write("Amount of snacks per day: " + amountPerDay + "<br>");
+document.write("You will need " + totalNeeded + " " + favoriteSnack + " to last you until the ripe old age of " + maxAge + ".");
+
+
+
 
