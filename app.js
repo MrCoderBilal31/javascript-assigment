@@ -362,8 +362,281 @@ document.write("Favorite Snack: " + favoriteSnack + "<br>");
 document.write("Current age: " + currentAge + "<br>");
 document.write("Estimated maximum age: " + maxAge + "<br>");
 document.write("Amount of snacks per day: " + amountPerDay + "<br>");
-document.write("You will need " + totalNeeded + " " + favoriteSnack + " to last you until the ripe old age of " + maxAge + ".");
+document.write("You will need " + totalNeeded + " " + favoriteSnack + " to last you until the ripe old age of " + maxAge + "." + "<br>");
+
+// chapter no:5 compelet
 
 
+// chapter no:6 to 9
+
+// Question no:1
+// Answer no:1
+var a = 10;
+
+// step 1
+document.write("Result: <br>");
+document.write("The value of a is: " + a + "<br>");
+document.write("......................................................<br><br>");
+
+// step 2
+document.write("The value of ++a is: " + (++a) + "<br>");
+document.write("Now the value of a is: " + a + "<br><br><br>");
+
+// step 3
+document.write("The value of a++ is: " + (a++) + "<br>");
+document.write("Now the value of a is: " + a + "<br><br><br>");
+
+// step 4
+document.write("The value of --a is: " + (--a) + "<br>");
+document.write("Now the value of a is: " + a + "<br><br><br>");
 
 
+// step 5
+document.write("The value of a-- is: " + (a--) + "<br>");
+document.write("Now the value of a is: " + a + "<br>");
+
+
+// Question no:2
+// Answer no:2
+
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+
+document.write("Final value of a is: " + a + "<br>");
+document.write("Final value of b is: " + b + "<br>");
+document.write("Final value of result is: " + result + "<br>");
+
+// Question no:3
+// Answer no:3
+var userName = prompt("Apna naam darj karein (Enter your name):");
+
+if (userName !== null && userName.trim() !== "") {
+    document.write("<h1>Assalam-o-Alaikum, " + userName + "! Welcome to our website.</h1>");
+}
+else {
+    document.write("<h1>Hello, Guest! Welcome to our website.</h1>");
+}
+
+// Question no:4
+// Answer no:4
+
+var userInput = prompt("Koi number darj karein (Multiplication table ke liye):");
+
+var num = (userInput === null || userInput.trim() === "") ? 5 : parseInt(userInput);
+
+document.write("<h2>Multiplication Table of " + num + "</h2>");
+document.write("----------------------------------------<br>");
+
+for (var i = 1; i <= 10; i++) {
+    var result = num * i;
+    document.write(num + " &times; " + i + " = " + result + "<br>");
+}
+
+// chapter no:6 to 9 compelet
+
+
+// chapter no:9 to 11
+
+// Question no:1
+// Answer no:1
+var city = prompt("Apne city ka naam likhein:");
+
+if (city === "Karachi" || city === "karachi" || city === "KARACHI") {
+    document.write("Welcome to city of lights" + "<br>");
+} else {
+    document.write("Welcome to " + city + "<br>");
+}
+
+// Question no:2
+// Answer no:2
+var gender = prompt("Apna gender likhein (male / female):");
+
+if (gender === "male" || gender === "Male") {
+    document.write("Good Morning Sir" + "<br>");
+} else if (gender === "female" || gender === "Female") {
+    document.write("Good Morning Ma'am" + "<br>");
+} else {
+    document.write("Good Morning" + "<br>");
+}
+
+// Question no:3
+// Answer no:3
+var color = prompt("Traffic signal ka color likhein (Red, Yellow, Green):");
+
+if (color === "Red" || color === "red") {
+    document.write("Must Stop" + "<br>");
+} else if (color === "Yellow" || color === "yellow") {
+    document.write("Ready to move" + "<br>");
+} else if (color === "Green" || color === "green") {
+    document.write("Move now" + "<br>");
+} else {
+    document.write("Ghalat color darj kiya gaya hai" + "<br>");
+}
+
+// Question no:4
+// Answer no:4
+var fuel = parseFloat(prompt("Car mein bacha hua fuel (litres mein) darj karein:"));
+
+if (fuel < 0.25) {
+    document.write("Please refill the fuel in your car" + "<br>");
+} else {
+    document.write("Fuel is sufficient" + "<br>");
+}
+
+// Question no:5
+// Answer no:5
+var a = 4;
+if (++a === 5) {
+    alert("given condition for variable a is true");
+}
+
+var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");
+}
+
+var c = 12;
+if (c++ === 13) {
+    alert("condition 1 is true");
+}
+if (c === 13) {
+    alert("condition 2 is true");
+}
+if (++c < 14) {
+    alert("condition 3 is true");
+}
+if (c === 14) {
+    alert("condition 4 is true");
+}
+
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost) {
+    alert("The cost equals");
+}
+
+if (true) {
+    alert("True");
+}
+if (false) {
+    alert("False");
+}
+
+if ("car" < "cat") {
+    alert("car is smaller than cat");
+}
+
+// Question no:6
+// Answer no:6
+var sub1Marks = parseFloat(prompt("Pehle subject ke obtained marks darj karein:"));
+var sub2Marks = parseFloat(prompt("Dusre subject ke obtained marks darj karein:"));
+var sub3Marks = parseFloat(prompt("Teesre subject ke obtained marks darj karein:"));
+var totalMarksEach = parseFloat(prompt("Har subject ke total marks darj karein (e.g., 100):"));
+var totalObtained = sub1Marks + sub2Marks + sub3Marks;
+var totalPossibleMarks = totalMarksEach * 3;
+var percentage = (totalObtained / totalPossibleMarks) * 100;
+
+var grade, remarks;
+if (percentage >= 80) {
+    grade = "A-one";
+    remarks = "Excellent";
+} else if (percentage >= 70) {
+    grade = "A";
+    remarks = "Good";
+} else if (percentage >= 60) {
+    grade = "B";
+    remarks = "You need to improve";
+} else {
+    grade = "Fail";
+    remarks = "Sorry";
+}
+
+document.write("<h1>Marks Sheet</h1>");
+document.write("<p><b>Total marks :</b> " + totalPossibleMarks + "</p>");
+document.write("<p><b>Marks obtained :</b> " + totalObtained + "</p>");
+document.write("<p><b>Percentage :</b> " + percentage.toFixed(2) + "%</p>");
+document.write("<p><b>Grade :</b> " + grade + "</p>");
+document.write("<p><b>Remarks :</b> " + remarks + "</p>");
+
+
+// Question no:7
+// Answer no:7
+var secretNumber = 7;
+var userGuess = parseInt(prompt("1 se 10 ke darmiyan koi number guess karein:"));
+
+if (userGuess === secretNumber) {
+    document.write("Bingo! Correct answer" + "<br>");
+} else if (userGuess + 1 === secretNumber || userGuess - 1 === secretNumber) {
+    document.write("Close enough to the correct answer" + "<br>");
+} else {
+    document.write("Wrong guess, try again!" + "<br>");
+}
+
+
+// Question no:8
+// Answer no:8       
+var num = parseInt(prompt("Koi number darj karein:"));
+
+if (num % 3 === 0) {
+    document.write("Number " + num + " 3 se mukammal taur par divisible hai." + "<br>");
+} else {
+    document.write("Number " + num + " 3 se divisible nahi hai." + "<br>");
+}
+
+// Question no:9
+// Answer no:9
+var num = parseInt(prompt("Koi number darj karein:"));
+
+if (num % 2 === 0) {
+    document.write("Number " + num + " ek Even number hai." + "<br>");
+} else {
+    document.write("Number " + num + " ek Odd number hai." + "<br>");
+}
+
+// Question no:10
+// Answer no:10        
+var t = parseFloat(prompt("Temperature (in C) darj karein:"));
+
+if (t > 40) {
+    document.write("It is too hot outside." + "<br>");
+} else if (t > 30) {
+    document.write("The Weather today is Normal." + "<br>");
+} else if (t > 20) {
+    document.write("Today’s Weather is cool." + "<br>");
+} else if (t > 10) {
+    document.write("OMG! Today’s weather is so Cool." + "<br>");
+} else {
+    document.write("Bahut zyada sardi hai!" + "<br>");
+}
+
+// Question no:11
+// Answer no:11 
+var num1 = parseFloat(prompt("Phla number darj karein:"));
+var num2 = parseFloat(prompt("Dusra number darj karein:"));
+var operation = prompt("Operation darj karein (+, -, *, /, %):");
+
+var result;
+
+if (operation === "+") {
+    result = num1 + num2;
+    document.write("Result: " + num1 + " + " + num2 + " = " + result + "<br>");
+} else if (operation === "-") {
+    result = num1 - num2;
+    document.write("Result: " + num1 + " - " + num2 + " = " + result + "<br>");
+} else if (operation === "*") {
+    result = num1 * num2;
+    document.write("Result: " + num1 + " * " + num2 + " = " + result + "<br>");
+} else if (operation === "/") {
+    if (num2 !== 0) {
+        result = num1 / num2;
+        document.write("Result: " + num1 + " / " + num2 + " = " + result + "<br>");
+    } else {
+        document.write("Error: Zero se divide nahi kiya ja sakta!" + "<br>");
+    }
+} else if (operation === "%") {
+    result = num1 % num2;
+    document.write("Result: " + num1 + " % " + num2 + " = " + result + "<br>");
+} else {
+    document.write("Ghalat operation darj kiya gaya hai!" + "<br>");
+}
