@@ -640,3 +640,102 @@ if (operation === "+") {
 } else {
     document.write("Ghalat operation darj kiya gaya hai!" + "<br>");
 }
+
+// chapter no 12 to 13
+
+// question no:1
+// answer no:1
+
+var number = 25;
+
+if (number > 30){
+    console.log("number galat hai.");    
+}
+else if (number == 35){
+    console.log("number theek hai.");    
+}
+else{
+    console.log("sab jawab galat dia..");
+    
+}
+
+// question no:2
+// answer no:2
+
+var nam = 10;
+
+if (nam > 20){
+    console.log("Positive Number");    
+}
+else if (nam < 0){
+    console.log("Negative Number");    
+}
+else{
+    console.log("Zero Number");    
+}
+
+// question no:3
+// answer no:3
+
+var character = "a";
+var vowels = "AEIOU"
+
+if (vowels.includes(character)){
+    console.log(true);    
+}
+else{
+    console.log(false);
+    
+}
+
+// question no:4
+// answer no:4
+
+
+let correctPassword = "12345";
+
+let userPassword = prompt("Enter your password:");
+
+if (userPassword === "") {
+    console.log("Please enter your password");
+}
+else if (userPassword === correctPassword) {
+    console.log("Correct! The password you entered matches the original password");
+}
+else {
+    console.log("Incorrect password");
+}
+
+// question no:5
+// answer no:5
+
+var greeting;
+var hour = 13;
+
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+
+// / question no:6
+// answer no:6
+
+
+var time = 1900;
+
+if (time >= 0 && time < 1200) {
+    alert("Good morning!");
+}
+else if (time >= 1200 && time < 1700) {
+    alert("Good afternoon!");
+}
+else if (time >= 1700 && time < 2100) {
+    alert("Good evening!");
+}
+else if (time >= 2100 && time <= 2359) {
+    alert("Good night!");
+}
+else {
+    alert("Invalid time");
+}
