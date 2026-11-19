@@ -739,3 +739,93 @@ else if (time >= 2100 && time <= 2359) {
 else {
     alert("Invalid time");
 }
+
+
+
+
+// chapter no: 14 to 16
+
+
+
+// question no: 1
+// answer no: 1
+
+var studentNameLiteral = []
+
+// question no: 2
+// answer no: 2
+
+var studentNameObject = new Array();
+
+// question no: 3
+// answer no: 3
+
+var fruits = ["apple" , "banana" , "grapse" , "watermelon"];
+
+console.log(fruits);
+
+// question no: 4
+// answer no: 4
+
+var namber = [10 , 20 , 30 , 40 , 50];
+
+console.log(namber);
+
+// question no: 5
+// answer no: 5
+
+var resultBolean = [true , "bilal" , false , "ahad"];
+
+console.log(resultBolean);
+
+// question no: 6
+// answer no: 6
+
+var sabMilakar = ["loin" , 2 , true , "rabbit" , 4 , false , "cow" , 5 , true];
+
+console.log(sabMilakar);
+
+// question no: 7
+// answer no: 7
+
+var degrees = ["SSC" , "HSC" , "BCS" , "BS" , "BCOM" , "MS"];
+
+console.log(degrees);
+
+// question no: 8
+// answer no: 8
+
+var studentName = ["Bilal" , "Ahmed" , "Mustufa"];
+
+var score = [490 , 280 , 360];
+
+var totalMark = 500;
+
+var bilalPercantage = 98;
+var ahmedPercantage = 56;
+var mustufaPercantage = 72;
+
+// bilal
+document.write("Score or Bilal is" + " " + 490. + " " + "percantage:" + " " + bilalPercantage + "%" + "<br>") 
+// ahmed
+document.write("Score or Ahmed is" + " " + 280. + " " + "percantage:" + " " + ahmedPercantage + "%" + "<br>") 
+// mustufa
+document.write("Score or Mustufa is" + " " + 360. + " " + "percantage:" + " " + mustufaPercantage + "%" + "<br>") 
+
+// question no: 9
+// answer no: 9
+
+var cities = ["Karachi" , "Lahore" , "Islamabad" , "Quetta" , "Peshawar"];
+
+console.log(cities);
+
+
+var selectedCities = cities.slice(0, 3);
+
+console.log(selectedCities);
+
+// question no: 10
+// answer no: 10
+
+
+
