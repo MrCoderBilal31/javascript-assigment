@@ -827,5 +827,78 @@ console.log(selectedCities);
 // question no: 10
 // answer no: 10
 
+var colors = ["red" , "blue" , "yellow"];
+console.log(colors);
+
+var addStart = prompt("start ke lia color chosse kren")
+colors.unshift(addStart);
+console.log(colors);
+
+var addEnd = prompt("end ke lia color chosse kren")
+colors.push(addEnd);
+console.log(colors);
+
+colors.unshift("yellow" , "purple");
+console.log(colors);
+
+colors.shift();
+console.log(colors);
+
+colors.pop();
+console.log(colors);
+
+// question no: 11
+// answer no: 11
+
+var studentNumber = [480 , 350 , 230 , 100];
+console.log(studentNumber);
+
+studentNumber.sort()
+console.log(studentNumber);
 
 
+// / question no: 12
+// answer no: 12
+
+var catName = ["This", "is", "my", "cat"];
+console.log(catName);
+
+
+console.log(catName.join(" "));
+
+
+// / question no: 13
+// answer no: 13
+
+var fruit = []
+
+fruit.push("Apple");
+fruit.push("Banana");
+fruit.push("Grapse");
+
+console.log(fruit);
+
+console.log(fruit.shift());
+console.log(fruit.shift());
+console.log(fruit.shift());
+
+
+// / question no: 14
+// answer no: 14
+
+var animals = []
+
+animals.push("Dog");
+animals.push("Cat");
+animals.push("Cow");
+
+console.log(animals);
+
+animals.pop()
+console.log(animals);
+
+// / question no: 15
+// answer no: 15
+
+var phoneCompanys = ["Apple" , "Samsung" , "Motorola" , "Nokia" , "Sony" , "Redme" , "Infinix"];
+console.log(phoneCompanys);
